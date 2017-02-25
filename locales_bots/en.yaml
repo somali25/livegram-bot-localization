@@ -1,0 +1,21 @@
+language_info:
+  is_enabled: true
+  name: English
+
+start:
+  choose_language: 'Choose your language:'
+  language_changed: Language saved.
+  copyright: |
+    Use @LivegramBot to build bots for support of your customers.
+    
+cannot_forward: |
+  You can't forward someone else's message.
+  
+cannot_edit: |
+  Edit posts is impossible. If you have corrections to your last messages - please correct it and send it to the bot again.
+
+welcome: |-
+  Hello!
+  
+  Send us your problem.
+after_sending: the text is not specified
