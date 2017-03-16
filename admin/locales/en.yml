@@ -1,0 +1,57 @@
+not_access: Sorry, you have no access.
+
+welcome: |
+  You can create a broadcast post that will be sent to all bot users.
+  
+  /newsletter - create a new broadcast post  
+  /cancel - cancel the current operation
+  
+newsletter:
+  welcome: |
+    Сhoose users by language you want to send a broadcast post.
+    
+    Type /cancel to cancel the operation.
+  send: >
+    A broadcast post will be sent to <b>${count} users</b> of ${lang} language.
+  
+  
+    Send one or multiple messages you want to include in the post. It can be anything — a text, photo, video, even a sticker. You can also forward a message from a channel, so you can see the actual number of its views.
+
+
+    Type /cancel to cancel the operation.
+    
+  error_sent: | 
+    An error occurred while sending the broadcast post: 
+  
+    <pre>${error}></pre>
+  send_done: |
+    This message has been added to the post. You can continue to send messages. Type /done to send this broadcast post.
+    
+    /preview — preview the broadcast post
+    /cancel - cancel the current operation
+  
+  done: |
+    Are you sure you want to send this broadcast post? 
+    
+    Type /send to confirm or /back to go to the main menu.
+    
+  preview_sent: |
+    The post preview sent above. You can continue to send messages. Type /done to send this broadcast post.
+
+    /preview — preview the broadcast post
+    /cancel - cancel the current operation
+  start: |
+    #broadcast #started
+    
+    🕒 Sending of the broadcast post to ${count} users is started!
+  end: |
+    #broadcast #completed #${lang}
+    
+    💥 Sending of the broadcast post is successfully completed!
+    
+    <b>All users:</b> ${count}
+    <b>Have received:</b> ${count_ok}
+    <b>Have blocked:</b> ${count_block}
+  
+keyboard:
+  all_languages: All languages

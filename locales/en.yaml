@@ -1,0 +1,225 @@
+name: English
+
+start:
+  welcome: |
+    <b>Livegram Bot</b> is a builder of feedback bots for Telegram. Read more <a href="http://telegra.ph/What-is-Livegram-Bot-03-16">here</a>.
+    
+    You can control bot by sending these commands:
+        
+    <b>Bots</b>
+    /addbot - connect a new bot
+    /mybots - manage bots
+    
+    <b>Help</b>
+    /example - examples of made bots
+    /feedback - how to contact the devs
+    
+    /lang - сhange your language
+    
+    /help - get a list of commands    
+  do: OK. What do you want to do?
+  choose_language: Please choose your language.
+  language_changed: 👌 OK, your language saved.
+  rate: |
+    Give us 5 stars on Store Bot if you like Controller Bot:
+    
+    telegram.me/storebot?start=LivegramBot
+  help: |
+    <b>Livegram Bot</b> is a builder of feedback bots for Telegram. Read more <a href="http://telegra.ph/what-is-livegram-bot-02-19">here</a>.
+    
+    You can control bot by sending these commands:
+    
+    <b>Bots</b>
+    /addbot - connect a new bot
+    /mybots - manage bots
+    
+    <b>Help</b>
+    /example - examples of made bots
+    /feedback - how to contact the devs
+    
+    /lang - сhange your language
+    /rate - rate bot
+    
+    /cancel - cancel the current operation
+  example: |
+    Here is examples of bots that were made using Livegram Bot:
+  
+    1. @ExampleSupportBot — example of a bot made using Livegram Bot.
+    
+    2. @LivegramSupportBot — support bot for users of Livegram Bot.
+    
+    3. @ControllerSupportBot — support bot for users of @ControllerBot.
+  feedback: Message us at @LivegramSupportBot if you have any issues or questions about Livegram Bot.
+  
+  access_bot: |
+    Sorry, you have no access.
+    
+    Learn how to get access at @secretship.
+ 
+bots:
+  add:
+    welcome: |
+      To connect a bot you should follow these two steps:
+      
+      1. Open @BotFather, then enter <code>/newbot</code> and choose a name and a username for your bot.
+      2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
+      
+      <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect. 
+      
+      Message us at @LivegramSupportBot, if any issues appeared when you connect your own bot.
+            
+    wrong_token: |
+      Doesn't look like anything to me. Please send me a token of your bot. It should look like this one: <code>123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11</code>
+    error_add: |
+      Invalid token. Try to get a new one or use a token of another bot.
+    bot_already_added: |
+      Looks familiar to me. You already have this bot connected.
+    connect: |
+      Success! @${bot.username} has been connected.
+      
+      Your new bot is ready for working. If you want to change text messages of the bot, add more languages or connect stats, go to the bot settings.
+  list:
+    not_found_bots: |
+      There is no connected bots yet. Send /addbot to connect a new one.
+    welcome: 'Сhoose a bot from the list below:'
+    view_bot: |
+      Here it is: @${bot.username}. What do you want to do with the bot?
+  settings:
+    confirm_delete_bot: |
+      Are you sure you want to delete @${bot}? 
+      
+      Bot messages will not be deleted.
+    bot_deleted: 👌 Done! The bot is gone.
+    botan: 
+      welcome: |
+        You can connect Yandex.Appmetrika to track bot usage stats.
+        
+        <b>With connected stats you can get this data:</b>
+        — number of new and active users
+        — number of messages from particular users
+        — number of replies to these messages
+        
+        <b>How to connect stats?</b>
+        1. Go to appmetrica.yandex.ru/application/new
+        2. Type <code>${bot.name}</code> in "Application name" field and click "Create" button.
+        4. Copy <code>API key</code> and send it here.
+      connected: |
+        Success! Stats have been connected.
+                
+        <b>How to view stats?</b>
+        Go to https://appmetrica.yandex.ru/application/list and choose <b>${bot.name}</b> in the left bar.
+        
+        <b>How to disconnect stats?</b>
+        Choose "Disconnect Stats" to disable the bot usage tracking.
+      incorrect_api_key: Invalid API key.
+      connected_success: |
+        Success! Stats have been connected.
+        
+        To view stats go to https://appmetrica.yandex.ru/application/list and choose <b>${bot.name}</b> in the left bar.
+      disconnected: |
+        Done! Stats have been disconnected.
+    texts:
+      welcome: |
+        You can add another one language or edit strings of existed.
+      select_language: |
+        Here it is: <b>${language.name}</b>.        
+        ${language.is_default ? '\n<b>This language set as default.</b>\n' : ''}        
+        You can edit strings or delete this language. If you set the language as default, it will be shown to users after starting the bot.
+      add_language: |
+        Choose language you want to add:
+        
+      language_added: 👌 OK, the language has been added.
+      language_deleted: 👌 OK, the language has been deleted.
+      language_saved_by_default: 👌 OK, the language has been set as default.
+      
+      change_texts: |
+        ${{
+          welcome: '<b>1/2.</b> This message is sent after starting the bot.',
+          after_sending: '<b>2/2.</b> This message is sent automatically as a reply to user messages. By default, it does not send anything.'
+        }[change.key]}
+        
+        <b>Current strings</b>${change.is_default ? ' (used by default)' : ''}:
+        <pre>${change.current_text || '(strings are not specified)'}</pre>
+        
+        Send a message with a new strings. You can also use <a href="https://core.telegram.org/bots/api#html-style">HTML-style formattings</a>).
+      error_parse_message: |
+        Errors in formatting text:
+        
+        <pre>${description}</pre>
+        
+        Please fix all errors and send message again.
+    chats:
+      welcome: |
+        Choose a group you want to set up.
+      chats_not_found: |
+        There is no connected groups yet. All messages will be sent to this conversation.
+         
+        To connect a new group add @${username} as a member to it.
+      switch_language: |
+        Choose language messages from users of what will be sent to this group.
+        
+    users: |
+      User stats for @${username}:
+      
+      <b>All users:</b> ${all}
+      <b>Have blocked:</b> ${bot_blocked}
+      
+      The counter of the users that have blocked the bot is updating only after sending broadcast post.
+      
+    messages: |
+      Message stats for @${username}:
+      
+      <b>All messages:</b> ${all}
+      <b>Incoming:</b> ${messages}
+      <b>Outgoing:</b> ${reply}
+        
+  chat:
+    is_not_supergroup: |
+      Your group chat "${title}" needs to be a supergroup to make the bot worked. 
+      
+      Convert it to a supergroup and re-add the bot.
+    added: |
+      Success! The group "${title}" has been connected to @${bot}.
+       
+      Now all messages will be sent there. You can add another users to that group, so they will be also able to reply on messages from @${bot}.
+      
+      To disconnect the group delete the bot from its members list.
+    removed: |
+      The group "${title}" has been disconnected from @${bot} as the bot was deleted from it.
+
+keyboard:
+  btn:
+    true: Yes, It's Right
+    back: Back
+    back_inline: « Back
+    cancel: Cancel
+    help: Help
+  
+
+  bots:
+    add_bot: Connect Bot
+    set: Bot Settings
+    
+    texts: Languages
+    chats: Groups
+    users: Users
+    messages: Messages
+    statistics: Stats
+    delete_bot: Delete Bot
+    disconnect_botan: Disconnect Stats
+    back_to_list: « Back to Bots List
+    
+  settings:
+    users:
+      newsletter: Broadcast
+    chats:
+      connect_language: Change Language
+    texts:
+      add_language: Add Language
+      is_default: This language set as default
+      set_default: Set as Default
+      change: Change Strings
+      delete: Delete Language
+      reset: Reset
+      skip: Skip
+      complete: Save Changes
