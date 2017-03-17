@@ -2,7 +2,7 @@ name: English
 
 start:
   welcome: |
-    <b>Livegram Bot</b> is a builder of feedback bots for Telegram. Read more <a href="http://telegra.ph/What-is-Livegram-Bot-03-16">here</a>.
+    <b>Livegram Bot</b> is a builder of feedback bots for Telegram. Read more <a href="http://telegra.ph/What-is-Livegram-Bot-03-17">here</a>.
     
     You can control bot by sending these commands:
         
@@ -25,7 +25,7 @@ start:
     
     telegram.me/storebot?start=LivegramBot
   help: |
-    <b>Livegram Bot</b> is a builder of feedback bots for Telegram. Read more <a href="http://telegra.ph/what-is-livegram-bot-02-19">here</a>.
+    <b>Livegram Bot</b> is a builder of feedback bots for Telegram. Read more <a href="http://telegra.ph/What-is-Livegram-Bot-03-17">here</a>.
     
     You can control bot by sending these commands:
     
