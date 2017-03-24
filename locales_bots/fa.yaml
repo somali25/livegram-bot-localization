@@ -1,0 +1,21 @@
+language_info:
+  is_enabled: true
+  name: Persian
+
+start:
+  choose_language: 'لطفا زبان خود را انتخاب کنید:'
+  language_changed: تمام ، زبان شما ذخیره شد .
+  copyright: |
+    این بات ساخته شده است توسط @LivegramBot.
+
+cannot_forward: |
+  شما نمی توانید پیام فرد دیگری را منتقل کنید.
+
+cannot_edit: |
+  اگر می خواهید که دریافت کننده بتواند تغییرات را ببیند ، پیام خود را به عنوان جدید بفرستید .
+
+welcome: |-
+  سلام !
+
+  شما می توانید به وسیله ی این بات با ما ارتباط برقرار کنید .
+after_sending: (رشته ها مشخص نشده اند)

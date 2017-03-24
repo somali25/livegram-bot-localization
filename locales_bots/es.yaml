@@ -1,0 +1,20 @@
+language_info:
+  is_enabled: true
+  name: Español
+  
+start:
+  choose_language: 'Seleccione su idioma:'
+  language_changed: Idioma guardado.
+  copyright: |
+    Utilice @LivegramBot para crear los bots de soporte para sus clientes.
+cannot_forward: |
+  Usted puede reenviar los mensajes ajenos.
+  
+cannot_edit: |
+  Usted no puedе editar los mensajes. Si usted tiene una corrección de su pasado mensaje - corríjalo y envíe en el bot de nuevo.
+
+welcome: |-
+  Hola!
+  
+  Escriba su pregunta y le responderemos en breve.
+after_sending: No hay ningún texto
