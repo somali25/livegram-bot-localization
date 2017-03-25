@@ -1,0 +1,21 @@
+language_info:
+  is_enabled: true
+  name: O`zbekcha
+
+start:
+  choose_language: 'Tilni tanlang:'
+  language_changed: Til saqlandi.
+  copyright: |
+    @LivegramBot, sizga foydalanuvchilar bilan ma`lumotlar almashishda yordam beradi.
+
+cannot_forward: |
+  Kechirasiz! Siz xabarlarni foydalanuvchi imzosi saqlangan holatda yuboraolmaysiz.
+
+cannot_edit: |
+  Xabarni tahrirlayolmaysiz! Xabarni tahrirlash uchun siz botga yangi xabar yuboring va uni tahrirlash orqali foydalanuvchida yangi xabar aks ettirasiz.
+
+welcome: |-
+  Assalomu alekum!
+
+  Sizga qanday yordam beraolishim mumkun? Savolingiz bo`lsa marhamat, sizga tez orada javob beramiz.
+after_sending: (xabar matni kiritilmadi)
