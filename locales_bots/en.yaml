@@ -19,3 +19,6 @@ welcome: |-
   
   You can contact us using this bot.
 after_sending: (strings are not specified)
+
+ban: |
+  You have been banned ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}

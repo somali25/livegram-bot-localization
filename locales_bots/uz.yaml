@@ -19,3 +19,6 @@ welcome: |-
 
   Sizga qanday yordam beraolishim mumkun? Savolingiz bo`lsa marhamat, sizga tez orada javob beramiz.
 after_sending: (xabar matni kiritilmadi)
+
+ban: |
+  You have been banned ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}

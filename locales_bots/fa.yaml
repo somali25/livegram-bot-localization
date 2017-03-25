@@ -19,3 +19,6 @@ welcome: |-
 
   شما می توانید به وسیله ی این بات با ما ارتباط برقرار کنید .
 after_sending: (رشته ها مشخص نشده اند)
+
+ban: |
+  You have been banned ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}
