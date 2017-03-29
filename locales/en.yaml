@@ -59,7 +59,7 @@ start:
 bots:
   add:
     welcome: |
-      To connect a bot you should follow these two steps:
+      To connect a bot, you should follow these two steps:
       
       1. Open @BotFather, then enter <code>/newbot</code> and choose a name and a username for your bot.
       2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
@@ -115,7 +115,7 @@ bots:
       connected_success: |
         Success! Stats have been connected.
         
-        To view stats go to https://appmetrica.yandex.ru/application/list and choose <b>${bot.name}</b> in the left bar.
+        To view stats, go to https://appmetrica.yandex.ru/application/list and choose <b>${bot.name}</b> in the left bar.
       disconnected: |
         Done! Stats have been disconnected.
     texts:
@@ -141,7 +141,7 @@ bots:
         <b>Current strings</b>${change.is_default ? ' (used by default)' : ''}:
         <pre>${change.current_text || '(strings are not specified)'}</pre>
         
-        Send a message with a new strings. You can also use <a href="https://core.telegram.org/bots/api#html-style">HTML-style formattings</a>).
+        Send a message with a new strings. You can also use <a href="https://core.telegram.org/bots/api#html-style">HTML-style formatting</a>.
       error_parse_message: |
         Errors in formatting text:
         
@@ -154,7 +154,7 @@ bots:
       chats_not_found: |
         There is no connected groups yet. All messages will be sent to this conversation.
          
-        To connect a new group add @${username} as a member to it.
+        To connect a new group, add @${username} as a member to it.
       switch_language: |
         Choose language messages from users of what will be sent to this group.
         
@@ -183,7 +183,7 @@ bots:
        
       Now all messages will be sent there. You can add another users to that group, so they will be also able to reply on messages from @${bot}.
       
-      To disconnect the group delete the bot from its members list.
+      To disconnect the group, delete the bot from its members list.
     removed: |
       The group "${title}" has been disconnected from @${bot} as the bot was deleted from it.
 

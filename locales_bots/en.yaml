@@ -9,7 +9,7 @@ start:
     This bot was made using @LivegramBot.
     
 cannot_forward: |
-  You can't forward someone else's message.
+  You can't forward someone else's messages.
   
 cannot_edit: |
   If you want that the receiver can be able to see the changes, send your message as new.
