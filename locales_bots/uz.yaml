@@ -22,3 +22,6 @@ after_sending: (xabar matni kiritilmadi)
 
 ban: |
   You have been banned ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}
+
+unban: |
+  You have been unbanned.

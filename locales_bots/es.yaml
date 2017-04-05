@@ -7,6 +7,7 @@ start:
   language_changed: Idioma guardado.
   copyright: |
     Utilice @LivegramBot para crear los bots de soporte para sus clientes.
+
 cannot_forward: |
   Usted puede reenviar los mensajes ajenos.
   
@@ -20,4 +21,7 @@ welcome: |-
 after_sending: (no hay ningún texto)
 
 ban: |
-  You have been banned ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}
+  Está bloqueado ${until ? 'hasta ' + until + ' UTC' : 'para siempre'}.${reason ? '\n\nRazón: ' + reason : ''}
+
+unban: |
+  Está bloqueado.

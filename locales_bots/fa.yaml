@@ -21,4 +21,7 @@ welcome: |-
 after_sending: (رشته ها مشخص نشده اند)
 
 ban: |
-  You have been banned ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}
+  شما مسدود شده اید . ${until ? 'تا ' + until + ' UTC' : 'برای همیشه'}.${reason ? '\n\nدلیل: ' + reason : ''}
+
+unban: |
+  شما از مسدودیت خارج شده اید .
