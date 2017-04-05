@@ -1,0 +1,27 @@
+language_info:
+  is_enabled: true
+  name: Português Brasil
+
+start:
+  choose_language: 'Por favor, Escolha seu idioma:'
+  language_changed: OK, seu idioma foi salvo.
+  copyright: |
+    Este bot foi feito usando @LivegramBot.
+
+cannot_forward: |
+  Você não pode encaminhar as mensagens de outra pessoa.
+
+cannot_edit: |
+ Se você quiser que o receptor possa ver as alterações, envie sua mensagem como nova.
+
+welcome: |-
+  Olá!
+
+  Você pode entrar em contato conosco usando este bot.
+after_sending: (strings não são especificados)
+
+ban: |
+  Você foi banido ${until ? 'até ' + until + ' UTC' : 'sempre'}.${reason ? '\n\nMotivo: ' + reason : ''}
+
+unban: |
+  Você foi desbanido.
