@@ -1,0 +1,27 @@
+language_info:
+  is_enabled: true
+  name: French
+
+start:
+  choose_language: 'Veuillez choisir votre langue:'
+  language_changed: OK, langue sauvegardée.
+  copyright: |
+    Ce bot a été concu à partir de @LivegramBot.
+
+cannot_forward: |
+  Vous ne pouvez pas transmettre les messages de quelqu'un d'autre.
+
+cannot_edit: |
+  Si vous souhaitez que le destinataire puisse voir les modifications, envoyez votre message comme nouveau.
+
+welcome: |-
+  Salut!
+
+  Vous pouvez nous contacter en utilisant ce bot.
+after_sending: (strings are not specified)
+
+ban: |
+  Vous avez été banni ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}
+
+unban: |
+  Bannissement annulé.
