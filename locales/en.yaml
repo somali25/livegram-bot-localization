@@ -11,6 +11,7 @@ start:
     /mybots - manage bots
     
     <b>Help</b>
+    /help — answers to basic questions
     /example - examples of made bots
     /feedback - how to contact the devs
     
@@ -25,7 +26,7 @@ start:
     
     telegram.me/storebot?start=LivegramBot
   help: |
-    <b>Livegram Bot</b> is a builder of feedback bots for Telegram. Read more <a href="http://telegra.ph/What-is-Livegram-Bot-03-17">here</a>.
+    If you have any questions, take a look at the <a href="http://telegra.ph/Livegram-Help-03-29">Livegram Help</a>.
     
     You can control bot by sending these commands:
     
@@ -50,23 +51,16 @@ start:
     
     3. @ControllerSupportBot — support bot for users of @ControllerBot.
   feedback: Message us at @LivegramSupportBot if you have any issues or questions about Livegram Bot.
-  
-  access_bot: |
-    Sorry, you have no access.
-    
-    Learn how to get access at @secretship.
  
 bots:
   add:
     welcome: |
-      To connect a bot, you should follow these two steps:
+      To connect a bot you should follow these two steps:
       
-      1. Open @BotFather, then enter <code>/newbot</code> and choose a name and a username for your bot.
+      1. Open @BotFather and <a href="http://telegra.ph/Create-Bot-Livegram-FAQ-03-29">create a new bot</a>.
       2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
       
-      <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect. 
-      
-      Message us at @LivegramSupportBot, if any issues appeared when you connect your own bot.
+      <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect.
             
     wrong_token: |
       Doesn't look like anything to me. Please send me a token of your bot. It should look like this one: <code>123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11</code>
@@ -77,7 +71,7 @@ bots:
     connect: |
       Success! @${bot.username} has been connected.
       
-      Your new bot is ready for working. If you want to change text messages of the bot, add more languages or connect stats, go to the bot settings.
+      Your new bot is ready for working. If you have any questions, take a look at the <a href="http://telegra.ph/Livegram-Help-03-29">Livegram Help</a>.
   list:
     not_found_bots: |
       There is no connected bots yet. Send /addbot to connect a new one.
