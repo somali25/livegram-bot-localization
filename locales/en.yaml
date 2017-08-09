@@ -11,13 +11,11 @@ start:
     /mybots - manage bots
     
     <b>Help</b>
-    /help — answers to basic questions
+    /help - answers to basic questions
     /example - examples of made bots
     /feedback - how to contact the devs
     
     /lang - сhange your language
-    
-    /help - get a list of commands    
   do: OK. What do you want to do?
   choose_language: Please choose your language.
   language_changed: 👌 OK, your language saved.
