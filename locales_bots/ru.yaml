@@ -6,7 +6,7 @@ start:
   choose_language: 'Выберите ваш язык:'
   language_changed: Язык сохранен.
   copyright: |
-    Используйте @LivegramBot, чтобы создавать боты техподдержки.
+    Этот бот был создан с помощью @LivegramBot
 
 cannot_forward: |
   Вы не можете пересылать чужие сообщения.
