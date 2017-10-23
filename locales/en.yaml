@@ -15,9 +15,7 @@ start:
     /example - examples of made bots
     /feedback - how to contact the devs
     
-    /lang - сhange your language
-    
-    /help - get a list of commands    
+    /lang - сhange your language   
   do: OK. What do you want to do?
   choose_language: Please choose your language.
   language_changed: 👌 OK, your language saved.
