@@ -150,6 +150,9 @@ bots:
     removed: |
       The group "${title}" has been disconnected from @${bot} as the bot was deleted from it.
 
+help_ban: |
+  Incorrect time. The next time formats are allowed: 24h, 365d or 12m.
+
 keyboard:
   btn:
     true: Yes, It's Right

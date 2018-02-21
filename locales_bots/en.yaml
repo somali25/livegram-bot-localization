@@ -25,6 +25,3 @@ ban: |
 
 unban: |
   You have been unbanned.
-
-help_ban: |
-  Incorrect time. The next time formats are allowed: 24h, 365d or 12m.
