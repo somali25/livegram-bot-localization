@@ -25,3 +25,6 @@ ban: |
 
 unban: |
   You have been unbanned.
+
+help_ban: |
+  http://telegra.ph/Ban-Users-Livegram-FAQ-03-29

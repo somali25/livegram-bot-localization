@@ -185,12 +185,10 @@ keyboard:
     back_inline: « Назад
     cancel: Отмена
     help: Помощь
-  
 
   bots:
     add_bot: Добавить бот
     set: Настроить бот
-    
     texts: Тексты
     chats: Чаты
     statistics: Статистика
