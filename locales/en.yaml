@@ -113,7 +113,7 @@ bots:
         
         Please fix all errors and send message again.
       send_timer: |
-        Send a period of time in which the response message will not be sent to a user again. The following time formats are supported: <code>5s</code>, <code>1m</code>, <code>1h</code>.
+        Send a period of time in which the response message will not be sent to a user again. The next time formats are allowed: <code>5s</code>, <code>1m</code> or <code>1h</code>.
       bad_timer: |
         Incorrect time. Only periods from 5 seconds to 72 hours are allowed.
     chats:
