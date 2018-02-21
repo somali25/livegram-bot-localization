@@ -82,34 +82,6 @@ bots:
       
       Bot messages will not be deleted.
     bot_deleted: 👌 Done! The bot is gone.
-    botan: 
-      welcome: |
-        You can connect Yandex.Appmetrika to track bot usage stats.
-        
-        <b>With connected stats you can get this data:</b>
-        — number of new and active users
-        — number of messages from particular users
-        — number of replies to these messages
-        
-        <b>How to connect stats?</b>
-        1. Go to appmetrica.yandex.ru/application/new
-        2. Type <code>${bot.name}</code> in "Application name" field and click "Create" button.
-        4. Copy <code>API key</code> and send it here.
-      connected: |
-        Success! Stats have been connected.
-                
-        <b>How to view stats?</b>
-        Go to https://appmetrica.yandex.ru/application/list and choose <b>${bot.name}</b> in the left bar.
-        
-        <b>How to disconnect stats?</b>
-        Choose "Disconnect Stats" to disable the bot usage tracking.
-      incorrect_api_key: Invalid API key.
-      connected_success: |
-        Success! Stats have been connected.
-        
-        To view stats, go to https://appmetrica.yandex.ru/application/list and choose <b>${bot.name}</b> in the left bar.
-      disconnected: |
-        Done! Stats have been disconnected.
     texts:
       welcome: |
         You can add another one language or edit strings of existed.
@@ -149,27 +121,22 @@ bots:
         To connect a new group, add @${username} as a member to it.
       switch_language: |
         Choose language messages from users of what will be sent to this group.
-        
-    users: |
-      User stats for @${username}:
-      
-      <b>All users:</b> ${all}
-      <b>Have blocked:</b> ${bot_blocked}
-      
-      The counter of the users that have blocked the bot is updating only after sending broadcast post.
-      
-    messages: |
-      Message stats for @${username}:
-      
-      <b>All messages:</b> ${all}
-      <b>Incoming:</b> ${messages}
-      <b>Outgoing:</b> ${reply}
+
+    stats: |
+      Stats for @${username}:
+
+      <b>Users:</b>
+      All users: <b>${users_all}</b>
+      Have blocked: <b>${users_bot_blocked}</b>
+
+      <b>Messages:</b>
+      All messages: <b>${messages_all}</b>
+      Incoming: <b>${messages_messages}</b>
+      Outgoing: <b>${messages_reply}</b>
+
+      <i>The counter of the users that have blocked the bot is updating only after sending broadcast post.</i>
         
   chat:
-    is_not_supergroup: |
-      Your group chat "${title}" needs to be a supergroup to make the bot worked. 
-      
-      Convert it to a supergroup and re-add the bot.
     added: |
       Success! The group "${title}" has been connected to @${bot}.
        
@@ -194,11 +161,8 @@ keyboard:
     
     texts: Languages
     chats: Groups
-    users: Users
-    messages: Messages
     statistics: Stats
     delete_bot: Delete Bot
-    disconnect_botan: Disconnect Stats
     back_to_list: « Back to Bots List
     
   settings:
