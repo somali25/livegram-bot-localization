@@ -153,35 +153,7 @@ bots:
 help_ban: |
   Incorrect time. The next time formats are allowed: 24h, 365d or 12m.
 
-terms: |
-  By continuing, you agree not to:
-
-  - use our service to violate laws of your country.
-  - promote violence via connected bots.
-  - spread pornographic content via connected bots.
-
-  We reserve the right to update these <a href="http://telegra.ph/Livegram-Terms-of-Service-04-02">Terms of Service</a> later.
-
-  ${is_agreed
-    ? '✅ <b>You agreed to our Terms of Service</b>'
-    : ''
-  }
-
-bot_blocked: |
-  Your bot @${username} has been disconnected and blocked for violating the <a href="http://telegra.ph/Livegram-Terms-of-Service-04-02">Terms of Service Livegram</a>.
-
-  Message us at @LivegramSupportBot if you would like to appeal this decision.
-
-bot_unblocked: |
-  Your bot @${username} has been unblocked.
-
-you_blocked: |
-  You cannot add new bots because we have blocked your bots that violate the <a href="http://telegra.ph/Livegram-Terms-of-Service-04-02">Terms of Service Livegram</a>.
-
 keyboard:
-  terms:
-    agree_and_continue: Agree and Continue
-
   btn:
     true: Yes, It's Right
     back: Back
