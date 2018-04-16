@@ -45,13 +45,12 @@ newsletter:
     
     🕒 Sending of the broadcast post to ${count} users is started!
   end: |
-    #broadcast #completed #${lang}
-    
+
     💥 Sending of the broadcast post is successfully completed!
     
-    <b>All users:</b> ${count}
-    <b>Have received:</b> ${count_ok}
-    <b>Have blocked:</b> ${count_block}
+#    <b>All users:</b> ${count}
+#    <b>Have received:</b> ${count_ok}
+#    <b>Have blocked:</b> ${count_block}
   
 keyboard:
   all_languages: All languages
