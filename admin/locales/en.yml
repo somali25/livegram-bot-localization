@@ -41,11 +41,11 @@ newsletter:
     /preview — preview the broadcast post
     /cancel - cancel the current operation
   start: |
-    #broadcast #started
-    
     🕒 Sending of the broadcast post to ${count} users is started!
+  processing: |
+    Sent: ${sent} from ${all} (${percent}%)
+    Waiting: ${waiting}
   end: |
-
     💥 Sending of the broadcast post is successfully completed!
     
 #    <b>All users:</b> ${count}
