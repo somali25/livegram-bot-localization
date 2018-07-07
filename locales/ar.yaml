@@ -6,11 +6,11 @@ start:
     
     يمكنك التحكم في البوت من خلال هاده الاوامر:
         
-    <b>بوتات</b>
+    <b>بوت</b>
     /addbot - انشاء بوت تواصل
     /mybots - بوتاتي
     
-    <b>Help</b>
+    <b>Hمساعدة</b>
     /help - مساعدة
     /example - البوتات الخاصة بنا
     /feedback - اتصل بنا
@@ -26,29 +26,29 @@ start:
   help: |
     If you have any questions, take a look at the <a href="http://telegra.ph/Livegram-Help-03-29">Livegram Help</a>.
     
-    You can control bot by sending these commands:
+     يمكنك التحكم في البوت من خلال هاده الاوامر:
     
-    <b>Bots</b>
-    /addbot - connect a new bot
-    /mybots - manage bots
+    <b>بوت</b>
+    /addbot - انشاء بوت تواصل
+    /mybots - بوتاتي
     
-    <b>Help</b>
-    /example - examples of made bots
-    /feedback - how to contact the devs
+    <b>مساعدة</b>
+    /example - البوتات الخاصة بنا
+    /feedback - اتصل بنا
     
-    /lang - сhange your language
-    /rate - rate bot
+    /lang - تغيير اللغة
+    /rate - تقييم
     
-    /cancel - cancel the current operation
+    /cancel - القائمة الرئيسية
   example: |
-    Here is examples of bots that were made using Livegram Bot:
+    اليك امثلة عن برامج التتبع:
   
-    1. @ExampleSupportBot — example of a bot made using Livegram Bot.
+    1. @ExampleSupportBot — تم انشاءه مثال على Livegram Bot.
     
-    2. @LivegramSupportBot — support bot for users of Livegram Bot.
+    2. @LivegramSupportBot — بوت لدعم مستخدمي Livegram bot.
     
-    3. @ControllerSupportBot — support bot for users of @ControllerBot.
-  feedback: Message us at @LivegramSupportBot if you have any issues or questions about Livegram Bot.
+    3. @ControllerSupportBot — بوت لدعم مستخدمي @ControllerBot.
+  feedback: اتصل بنا عبر @LivegramSupportBot اذا كانت لديك اي مشاكل او استفسارات.
  
 bots:
   add:
@@ -78,13 +78,13 @@ bots:
       قم بتعديل بوتك: @${bot.username}. من خلال الاوامر التالية
   settings:
     confirm_delete_bot: |
-      Are you sure you want to delete @${bot}? 
+      هل انت متاكد انك تريد حذف @${bot}? 
       
-      Bot messages will not be deleted.
-    bot_deleted: 👌 Done! The bot is gone.
+      لن يتم حذف الرسائل التي ارسلتها عبره.
+    bot_deleted: 👌 تم حذف البوت.
     texts:
       welcome: |
-        You can add another one language or edit strings of existed.
+        يمكنك اضافة لغة اخرى او تحرير شيء معين.
       select_language: |
         Here it is: <b>${language.name}</b>.        
         ${language.is_default ? '\n<b>This language set as default.</b>\n' : ''}        
@@ -92,28 +92,28 @@ bots:
       add_language: |
         Choose language you want to add:
         
-      language_added: 👌 OK, the language has been added.
-      language_deleted: 👌 OK, the language has been deleted.
-      language_saved_by_default: 👌 OK, the language has been set as default.
+      language_added: 👌  موافق تم اضافة اللغة .
+      language_deleted: 👌 حسنا تم حذف اللغة.
+      language_saved_by_default: 👌 حسنا تم تعيين اللغة كاعداد اافتراضي.
       
       change_texts: |
         ${{
-          welcome: '<b>1/2.</b> This message is sent after starting the bot.',
-          after_sending: '<b>2/2.</b> This message is sent automatically as a reply to user messages. By default, it does not send anything.'
+          مرحبا: '<b>1/2.</b> يتم ارسال هاذه الرسالة بعد عملية البدء.',
+          after_sending: '<b>2/2.</b> يتم ارسال هذه الرسالة تلقائيا كرد على رسائل المستخدمز بشكل افتراضي لايرسل اي شيء.'
         }[change.key]}
         
         <b>Current strings</b>${change.is_default ? ' (used by default)' : ''}:
         <pre>${change.current_text || '(strings are not specified)'}</pre>
         
-        Send a message with a new strings. You can also use <a href="https://core.telegram.org/bots/api#html-style">HTML-style formatting</a>.
+       ارسال رسالة مع سلاسل جديدة <a href="https://core.telegram.org/bots/api#html-style">HTML-style formatting</a>.
       error_parse_message: |
         Errors in formatting text:
         
         <pre>${description}</pre>
         
-        Please fix all errors and send message again.
+        يرجى اصلاح جميع الاخطاء وارسال الرسالة مرة اخرى.
       send_timer: |
-        Send a period of time during which the response message will not be sent to a user again. The next time formats are allowed: <code>5s</code>, <code>1m</code> or <code>1h</code>.
+        إرسال فترة زمنية لا يتم خلالها إرسال رسالة الاستجابة إلى مستخدم مرة أخرى. يُسمح بتنسيقات المرة التالية: <code>5s</code>, <code>1m</code> or <code>1h</code>.
       bad_timer: |
         Incorrect time. Only periods from 5 seconds to 72 hours are allowed.
     chats:
@@ -127,41 +127,41 @@ bots:
         Choose language messages from users of what will be sent to this group.
     stats: |
       Stats for @${username}:
-      <b>Users:</b>
-      All users: <b>${users_all}</b>
-      Have blocked: <b>${users_bot_blocked}</b>
-      <b>Messages:</b>
-      All messages: <b>${messages_all}</b>
-      Incoming: <b>${messages_messages}</b>
-      Outgoing: <b>${messages_reply}</b>
-      <i>The counter of the users that have blocked the bot is updating only after sending broadcast post.</i>
+      <b>المستخدم:</b>
+      كل المستخدمين: <b>${users_all}</b>
+      قائمة المحظورين: <b>${users_bot_blocked}</b>
+      <b>رسالة:</b>
+      كل الرسائل: <b>${messages_all}</b>
+      الواردة: <b>${messages_messages}</b>
+      المرسلة: <b>${messages_reply}</b>
+      <i>يتم تحديث عداد المستخدمين الذين قاموا بحظر البوت فقط بعد إرسال مشاركة البث.</i>
         
   chat:
     added: |
-      Success! The group "${title}" has been connected to @${bot}.
+      تم ربط المجموعة بنجاح "${title}" مع البوت @${bot}.
        
-      Now all messages will be sent there. You can add another users to that group, so they will be also able to reply on messages from @${bot}.
+      الآن سيتم إرسال جميع الرسائل هناك. يمكنك إضافة مستخدمين آخرين إلى هذه المجموعة ، حتى يتمكنوا أيضًا من الرد على الرسائل من @${bot}.
       
-      To disconnect the group, delete the bot from its members list.
+     لقطع المجموعة ، احذف البوت من قائمة أعضائها. .
     removed: |
-      The group "${title}" has been disconnected from @${bot} as the bot was deleted from it.
+      تم فصل المجموعة "${title}" من @${bot} حيث تم حذف البوت منها.
 help_ban: |
-  Incorrect time. The next time formats are allowed: 24h, 365d or 12m.
+ الوقت غير صحيح. يُسمح بتنسيقات المرة التالية: 24 ساعة أو 365 يومًا أو 1 .
 terms: |
-  By continuing, you agree not to:
-  - use our service to violate laws of your country.
-  - promote violence via connected bots.
+  من خلال المتابعة ، فإنك توافق على عدم::
+- استخدام خدماتنا لانتهاك قوانين بلدك. 
+  - الترويج للعنف عبر برامج الروبوت المتصلة.
   - spread pornographic content via connected bots.
-  We reserve the right to update these <a href="http://telegra.ph/Livegram-Terms-of-Service-04-02">Terms of Service</a> later.
+ نحن نحتفظ بالحق في تحديث هذه <a href="http://telegra.ph/Livegram-Terms-of-Service-04-02">Terms of Service</a> later.
   ${is_agreed
     ? '✅ <b>You agreed to our Terms of Service</b>'
     : ''
   }
 bot_blocked: |
-  Your bot @${username} has been disconnected and blocked for violating the <a href="http://telegra.ph/Livegram-Terms-of-Service-04-02">Terms of Service Livegram</a>.
-  Message us at @LivegramSupportBot if you would like to appeal this decision.
+  لقد تم قطع اتصال @${username} لانتهاكه <a href="http://telegra.ph/Livegram-Terms-of-Service-04-02">Terms of Service Livegram</a>.
+راسلنا على @LivegramSupportBot إذا كنت ترغب في استئناف هذا القرار.
 bot_unblocked: |
-  Your bot @${username} has been unblocked.
+  لقد تم @${username} الغاء حظر.
 you_blocked: |
   You cannot add new bots because we have blocked your bots that violate the <a href="http://telegra.ph/Livegram-Terms-of-Service-04-02">Terms of Service Livegram</a>.
 keyboard:
@@ -192,14 +192,14 @@ keyboard:
     chats:
       connect_language: Change Language
     texts:
-      add_language: Add Language
+      add_language: اضافة لغة
       is_default: This language set as default
       set_default: Set as Default
       change: Edit Strings
-      delete: Delete Language
-      reset: Reset
-      skip: Skip
-      complete: Save Changes
+      delete: حذف لغة
+      reset: ريست
+      skip: تخطي
+      complete: تم حفظ التغييرات
       timer: "${timer
         ? 'Delay Timer: ' + timer + '.'
         : 'Set Delay Timer'
