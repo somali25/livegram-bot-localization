@@ -4,21 +4,21 @@ start:
   welcome: |
     <b>Livegram Bot</b> is a builder of feedback bots for Telegram. Read more <a href="http://telegra.ph/What-is-Livegram-Bot-03-17">here</a>.
     
-    You can control bot by sending these commands:
+    يمكنك التحكم في البوت من خلال هاده الاوامر:
         
-    <b>Bots</b>
-    /addbot - connect a new bot
-    /mybots - manage bots
+    <b>بوتات</b>
+    /addbot - انشاء بوت تواصل
+    /mybots - بوتاتي
     
     <b>Help</b>
-    /help - answers to basic questions
-    /example - examples of made bots
-    /feedback - how to contact the devs
+    /help - مساعدة
+    /example - البوتات الخاصة بنا
+    /feedback - اتصل بنا
     
-    /lang - сhange your language
-  do: OK. What do you want to do?
-  choose_language: Please choose your language.
-  language_changed: 👌 OK, your language saved.
+    /lang - تغيير اللغة
+  do: حسنا ماذا تريد ان تفعل?
+  choose_language: من فضلك اختر اللغة
+  language_changed: 👌 جيد تم حفظ اللغة الخاصة بك
   rate: |
     Give us 5 stars on Store Bot if you like Controller Bot:
     
@@ -53,29 +53,29 @@ start:
 bots:
   add:
     welcome: |
-      To connect a bot, you should follow these two steps:
+      لانشاء بوت التواصل الخاص بك اتبع التعليمات:
       
-      1. Open @BotFather and <a href="http://telegra.ph/Create-Bot-Livegram-FAQ-03-29">create a new bot</a>.
-      2. You’ll get a token (e.g. 12345:6789ABCDEF) — just forward or copy-paste it to me.
+      1. افتح @BotFather و <a href="http://telegra.ph/Create-Bot-Livegram-FAQ-03-29">create انشاء بوت جديد</a>.
+      2. ستحصل على التوكن مثلا (e.g. 12345:6789ABCDEF) — فقط قم بنسخه وارساله الي.
       
-      <b>Warning!</b> Don't connect bots already used by other services like Chatfuel, Manybot, ect.
+      <b>تحذير لاتوصل البوتات الاخرى مثل كات فول و ماني بوت.
             
     wrong_token: |
-      Doesn't look like anything to me. Please send me a token of your bot. It should look like this one: <code>123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11</code>
+      التوكن غير صحيح الرجاء ارساله بصورة صحيحة مثل: <code>123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11</code>
     error_add: |
-      Invalid token. Try to get a new one or use a token of another bot.
+      التوكن غير صحيح الرجاء المحاولة مرة اخرى بعد اتباع التعليمات.
     bot_already_added: |
-      Looks familiar to me. You already have this bot connected.
+      هاذا البوت جاهز سابقا.
     connect: |
-      Success! @${bot.username} has been connected.
+      نجح! @${bot.username} تم الربط.
       
-      Your new bot is ready for working. If you have any questions, take a look at the <a href="http://telegra.ph/Livegram-Help-03-29">Livegram Help</a>.
+      البوت جاهز للعمل اذا كانت لديك اسفسارات اخرى تواصل معنا <a href="http://telegra.ph/Livegram-Help-03-29">Livegram Help</a>.
   list:
     not_found_bots: |
-      There is no connected bots yet. Send /addbot to connect a new one.
-    welcome: 'Сhoose a bot from the list below:'
+      لايوجد بوتات حتى الان ارسل /addbot لانشاء بوت جديد.
+    welcome: 'بوت من القاىمة ادناه:'
     view_bot: |
-      Here it is: @${bot.username}. What do you want to do with the bot?
+      قم بتعديل بوتك: @${bot.username}. من خلال الاوامر التالية
   settings:
     confirm_delete_bot: |
       Are you sure you want to delete @${bot}? 
