@@ -43,11 +43,7 @@ start:
   example: |
     Here is examples of bots that were made using Livegram Bot:
   
-    1. @ExampleSupportBot — example of a bot made using Livegram Bot.
-    
-    2. @LivegramSupportBot — support bot for users of Livegram Bot.
-    
-    3. @ControllerSupportBot — support bot for users of @ControllerBot.
+    @ExampleSupportBot — example of a bot made using Livegram Bot.
   feedback: Message us at @LivegramSupportBot if you have any issues or questions about Livegram Bot.
  
 bots:
