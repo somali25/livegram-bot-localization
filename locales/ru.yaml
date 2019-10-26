@@ -44,11 +44,7 @@ start:
   example: |
     Показываем примеры использования нашего бота:
   
-    1. @ExampleSupportBot — пример бота работающего на конструкторе Livegram Bot.
-    
-    2. @LivegramSupportBot — техподдержка пользователей Livegram Bot.
-    
-    3. @ControllerSupportBot — техподдержка пользователей бота @ControllerBot.
+    @ExampleSupportBot — пример бота работающего на конструкторе Livegram Bot.
   feedback: Используйте бот @LivegramSupportBot, чтобы связаться с нами.
 
  
