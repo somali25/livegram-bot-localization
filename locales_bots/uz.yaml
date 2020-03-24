@@ -21,7 +21,7 @@ Sizga qanday yordam bera olishim mumkin? Savolingiz bo‘lsa, marhamat, sizga te
 after_sending: (xabar matni kiritilmadi)
 
 ban: |
-  Siz banga solindingiz. Muddat: ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}
+  Siz banga solindingiz. ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nMuddat: ' + reason : ''}
 
 unban: |
   Siz bandan chiqarildingiz.
