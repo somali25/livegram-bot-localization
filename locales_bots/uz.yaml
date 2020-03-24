@@ -1,27 +1,27 @@
 language_info:
   is_enabled: true
-  name: O`zbekcha
+  name: O‘zbekcha
 
 start:
   choose_language: 'Tilni tanlang:'
   language_changed: Til saqlandi.
   copyright: |
-    @LivegramBot, sizga foydalanuvchilar bilan ma`lumotlar almashishda yordam beradi.
+    @LivegramBot sizga foydalanuvchilar bilan ma’lumotlar almashishda yordam beradi.
 
 cannot_forward: |
-  Kechirasiz! Siz xabarlarni foydalanuvchi imzosi saqlangan holatda yuboraolmaysiz.
+  Kechirasiz! Siz xabarlarni foydalanuvchi ismi saqlangan holatda (forward'larni) yubora olmaysiz.
 
 cannot_edit: |
-  Xabarni tahrirlayolmaysiz! Xabarni tahrirlash uchun siz botga yangi xabar yuboring va uni tahrirlash orqali foydalanuvchida yangi xabar aks ettirasiz.
+  Xabarni tahrirlay olmaysiz! Xabarni tahrirlash uchun siz botga yangi xabar yuboring va uni tahrirlash orqali foydalanuvchida yangi xabar aks ettirasiz.
 
 welcome: |-
-  Assalomu alekum!
+  Assalomu alaykum!
 
-  Sizga qanday yordam beraolishim mumkun? Savolingiz bo`lsa marhamat, sizga tez orada javob beramiz.
+Sizga qanday yordam bera olishim mumkin? Savolingiz bo‘lsa, marhamat, sizga tez orada javob beramiz.
 after_sending: (xabar matni kiritilmadi)
 
 ban: |
-  You have been banned ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}
+  Siz banga solindingiz. ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nMuddat: ' + reason : ''}
 
 unban: |
-  You have been unbanned.
+  Siz bandan chiqarildingiz.
