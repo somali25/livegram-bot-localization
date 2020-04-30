@@ -6,7 +6,7 @@ start:
   choose_language: 'Tilni tanlang:'
   language_changed: Til saqlandi.
   copyright: |
-    @LivegramBot sizga foydalanuvchilar bilan ma’lumotlar almashishda yordam beradi.
+    Bot @LivegramBot-dan foydalanib yaratilgan.
 
 cannot_forward: |
   Kechirasiz! Siz xabarlarni foydalanuvchi ismi saqlangan holatda (forward'larni) yubora olmaysiz.
@@ -17,7 +17,7 @@ cannot_edit: |
 welcome: |-
   Assalomu alaykum!
 
-Sizga qanday yordam bera olishim mumkin? Savolingiz bo‘lsa, marhamat, sizga tez orada javob beramiz.
+  Sizga qanday yordam bera olishim mumkin? Savolingiz bo‘lsa, marhamat, sizga tez orada javob beramiz.
 after_sending: (xabar matni kiritilmadi)
 
 ban: |
