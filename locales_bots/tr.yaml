@@ -1,0 +1,25 @@
+language_info:
+  is_enabled: true
+  name: Türkçe
+
+start:
+  choose_language: 'Lütfen dilinizi seçin:'
+  language_changed: Tamam, diliniz kaydedildi.
+  copyright: |
+    Bu bot @LivegramBot kullanılarak yapıldı.
+    
+cannot_forward: |
+  Başka birinin mesajlarını iletemezsiniz.
+  
+cannot_edit: |
+  Alıcının değişiklikleri görebilmesini istiyorsanız, mesajınızı yeni olarak gönderin.
+welcome: |-
+  Merhaba!
+  
+  Bu botu kullanarak bizimle iletişime geçebilirsiniz.
+after_sending: (metinler belirlenmedi)
+
+ban: |
+  Engellendiniz ${until ? 'kadar ' + until + ' UTC' : 'sonsuza'}.${reason ? '\n\nSebep: ' + reason : ''}
+unban: |
+  Engeliniz kaldırıldı.

@@ -1,0 +1,203 @@
+name: Türkçe
+
+start:
+  welcome: |
+    <b>Livegram Bot</b>, Telegram'da geri bildirim botları oluşturur. <a href="http://telegra.ph/What-is-Livegram-Bot-03-17">Burada</a> daha fazlasını okuyabilirsiniz.
+    
+    Bu komutları göndererek botu kontrol edebilirsiniz:
+        
+    <b>Botlar</b>
+    /addbot - yeni bir bot bağlayın
+    /mybots - botları yönetin
+    
+    <b>Yardım</b>
+    /help - basit sorulara cevaplar
+    /example - yapılmış örnek botlar
+    /feedback - geliştiricilerle nasıl iletişime geçilir
+    
+    /lang - dilinizi değiştirin
+  do: Tamam. Ne yapmak istiyorsunuz?
+  choose_language: Lütfen dilinizi seçin.
+  language_changed: 👌 Tamam, diliniz kaydedildi.
+  rate: |
+    Livegram Bot'u seviyorsanız, Store Bot'ta 5 yıldız verin:
+    
+    telegram.me/storebot?start=LivegramBot
+  help: |
+    Sorularınız varsa, <a href="http://telegra.ph/Livegram-Help-03-29">Livegram Help</a> sayfasına bakın.
+    
+    Bu komutları göndererek botu kontrol edebilirsiniz:
+    
+    <b>Botlar</b>
+    /addbot - yeni bir bot bağlayın
+    /mybots - botları yönetin
+    
+    <b>Help</b>
+    /example - yapılmış örnek botlar
+    /feedback - geliştiricilerle nasıl iletişime geçilir
+    
+    /lang - dilinizi değiştirin
+    /rate - botu oylayın
+    
+    /cancel - şu anki işlemi iptal edin
+  example: |
+    Burada Livegram Bot kullanılarak yapılmış örnek botlar var:
+  
+    @ExampleSupportBot — Livegram Bot kullanılarak yapılmış örnek bot.
+  feedback: Livegram Bot hakkında herhabgi bir konu ya da sorunuz varsa, @LivegramSupportBot ile mesaj gönderin.
+ 
+bots:
+  add:
+    welcome: |
+      Bir bot bağlamak için bu iki adımı takip edin:
+      
+      1. @BotFather'ı açın ve <a href="http://telegra.ph/Create-Bot-Livegram-FAQ-03-29">yeni bir bot oluşturun</a>.
+      2. Bir token alacaksınız (örn. 12345:6789ABCDEF) — sadece onu bana iletin ya da kopyalayıp yapıştırın.
+      
+      <b>Uyarı!</b> Halihazırda Chatfuel, Manybot vb. gibi servisler tarafından kullanılan botları bağlamayın.
+            
+    wrong_token: |
+      Benimle ilgili bir şeye benzemiyor. Lütfen bana botunuzun tokenını gönderin. Bunun gibi görünmeli: <code>123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11</code>
+    error_add: |
+      Geçersiz token. Yeni bir tane almayı deneyin ya da başka bir botun tokenını kullanın.
+    bot_already_added: |
+      Sanki bana benziyor. Bu botu zaten bağladınız.
+    connect: |
+      Başarılı! @${bot.username} bağlandı.
+      
+      Yeni botunuz çalışmaya hazır. Sorularınız varsa, <a href="http://telegra.ph/Livegram-Help-03-29">Livegram Help</a> sayfasına bakın.
+  list:
+    not_found_bots: |
+      Henüz bağlı bot yok. Bağlamak için /addbot komutunu gönderin.
+    welcome: 'Listeden bir bot seçin:'
+    view_bot: |
+      Bot: @${bot.username}. Bu bot ile ne yapmak istiyorsunuz?
+  settings:
+    confirm_delete_bot: |
+      @${bot}'u silmek istediğinize emin misiniz? 
+      
+      Bot mesajları silinmeyecek.
+    bot_deleted: 👌 Tamam! Bot gitti.
+    texts:
+      welcome: |
+        aşka bir dil ekleyebilir ya da varolan metinleri düzenleyebilirsiniz.
+      select_language: |
+        Dil: <b>${language.name}</b>.        
+        ${language.is_default ? '\n<b>Bu dil varsayılan olarak ayarlı.</b>\n' : ''}        
+        Metinleri düzenleyebilir ya da bu dili silebilirsiniz. Dili varsayılan olarak ayarlarsanız, botu başlattıklarında kullanıcılara görünecek.
+      add_language: |
+        Eklemek istediğiniz dili seçin:
+        
+      language_added: 👌 Tamam, dil eklendi.
+      language_deleted: 👌 Tamam, dil silindi.
+      language_saved_by_default: 👌 Tamam, dil varsayılan olarak ayarlandı.
+      
+      change_texts: |
+        ${{
+          welcome: '<b>1/2.</b> Bu mesaj botu başlattıktan sonra gönderilir.',
+          after_sending: '<b>2/2.</b> Bu mesaj kullanıcı mesajlarına otomatik yanıt olarak gönderilir. Varsayılan olarak, bir şey gönderilmez.'
+        }[change.key]}
+        
+        <b>Şu anki metinler</b>${change.is_default ? ' (varsayılan olarak kullanılan)' : ''}:
+        <pre>${change.current_text || '(metinler belirlenmedi)'}</pre>
+        
+        Yeni metinlerle bir mesaj gönderin. Ayrıca <a href="https://core.telegram.org/bots/api#html-style">HTML tarzı formatı</a> da kullanabilirsiniz.
+      error_parse_message: |
+        Metin formatlama da hatalar:
+        
+        <pre>${description}</pre>
+        
+        Lütfen tüm sorunları düzeltin ve mesajı tekrar gönderin.
+      send_timer: |
+        Yanıt mesajlarının kullanıcıya tekrar gönderilmeyeceği bir zaman aralığı gönderin. Bu zaman formatlarına izin verilir: <code>5s</code>, <code>1m</code> veya <code>1h</code>.
+      bad_timer: |
+        Yanlış zaman. Sadece 5 saniyeden 72 saate kadar izin verilir.
+    chats:
+      welcome: |
+        Ayarlamak istediğiniz bir grubu seçin.
+      chats_not_found: |
+        Henüz bağlı grup yok. Tüm mesajlar bu konuşmaya gönderilecek.
+         
+        Yeni bir grup bağlamak için, @${username}'u üye olarak ekleyin.
+      switch_language: |
+        Bu gruba gönderilecek kullanıcı mesajalrının dilini seçin.
+    stats: |
+      @${username} için istatistikler:
+      <b>Kullanıcılar:</b>
+      Tüm kullanıcılar: <b>${users_all}</b>
+      Engellenenler: <b>${users_bot_blocked}</b>
+      <b>Mesajlar:</b>
+      Tüm mesajlar: <b>${messages_all}</b>
+      Gelen: <b>${messages_messages}</b>
+      Giden: <b>${messages_reply}</b>
+      <i>Botu engelleyen kullanıcı sayıları sadece yayın gönderisi gönderilince güncellenir.</i>
+        
+  chat:
+    added: |
+      Başarılı! "${title}" adlı grup @${bot}'a bağlandı.
+       
+      Artık tüm mesajlar oraya gönderilecek. Gruba başka kullanıcıları ekleyebilirsiniz, böylece @${bot}'tan gönderilen mesajları yanıtlayabilirler.
+      
+      Grubun bağlantısını kesmek için, botu gruptan çıkarın.
+    removed: |
+      "${title}" adlı grup ve @${bot} bağlantısı kesildi çünkü bot gruptan çıkarıldı.
+help_ban: |
+  Yanlış zaman. Bu zaman formatlarına izin verilir: 24h, 365d veya 12m.
+terms: |
+  Devam ederek, şunları kabul edersiniz:
+  - ülkenizin yasalarına karşı gelmeyecek şekilde servisimizi kullanmayı.
+  - bağlı botlar ile şiddeti yaymamayı.
+  - bağlı botlar ile pornografik içerik yaymamayı.
+  Bu <a href="http://telegra.ph/Livegram-Terms-of-Service-04-02">Kullanım Koşulları</a>'nı güncelleme hakkını saklı tutarız.
+  ${is_agreed
+    ? '✅ <b>Kullanım Koşulları'mızı kabul ettiniz</b>'
+    : ''
+  }
+bot_blocked: |
+  @${username} adlı botunuz <a href="http://telegra.ph/Livegram-Terms-of-Service-04-02">Livegram Kullanım Koşulları</a>'nı ihlal ettiği için engellendi ve bağlantısı kesildi.
+  Bu karara itiraz etmek isterseniz, @LivegramSupportBot ile mesaj gönderin.
+bot_unblocked: |
+  @${username} adlı botunuzun engeli kaldırıldı.
+you_blocked: |
+  Yeni botlar ekleyemezsiniz, çünkü <a href="http://telegra.ph/Livegram-Terms-of-Service-04-02">Livegram Kullanım Koşulları</a>'nı ihlal ettiği için botlarınızı engelledik.
+keyboard:
+  terms:
+    agree_and_continue: Kabul Et ve Devam Et
+
+  btn:
+    true: Evet, doğru
+    back: Geri
+    back_inline: « Geri
+    cancel: İptal Et
+    help: Yardım
+  
+
+  bots:
+    add_bot: Bot Bağlayın
+    set: Bot Ayarları
+    
+    texts: Yerelleştirmeler
+    chats: Gruplar
+    statistics: İstatistikler
+    delete_bot: Botu Sil
+    back_to_list: « Bot Listesine Dön
+    
+  settings:
+    users:
+      newsletter: Yayın
+    chats:
+      connect_language: Dili Değiştir
+    texts:
+      add_language: Dil Ekle
+      is_default: Bu dil varsayılan olarak ayarlı
+      set_default: Varsayılan olarak ayarla
+      change: Metinleri Düzenle
+      delete: Dili Sil
+      reset: Sıfırla
+      skip: Atla
+      complete: Değişiklikleri Kaydet
+      timer: "${timer
+        ? 'Gecikme Zamanlayıcı: ' + timer + '.'
+        : 'Gecikme Zamanlayıcı Ayarla'
+      }"
+      disable_timer: Devredışı Bırak 
