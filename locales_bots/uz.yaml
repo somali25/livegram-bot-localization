@@ -6,7 +6,7 @@ start:
   choose_language: 'Tilni tanlang:'
   language_changed: Til saqlandi.
   copyright: |
-    Bot @LivegramBot-dan foydalanib yaratilgan.
+    Ushbu bot @Livegrambot yordamida yaratilgan.
 
 cannot_forward: |
   Kechirasiz! Siz xabarlarni foydalanuvchi ismi saqlangan holatda (forward'larni) yubora olmaysiz.
