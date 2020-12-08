@@ -5,46 +5,33 @@ start:
     <b>Livegram Bot</b> is a builder of feedback bots for Telegram. Read more <a href="http://telegra.ph/What-is-Livegram-Bot-03-17">here</a>.
     
     You can control bot by sending these commands:
-        
-    <b>Bots</b>
+
     /addbot - connect a new bot
     /mybots - manage bots
-    
-    <b>Help</b>
-    /help - answers to basic questions
-    /example - examples of made bots
-    /feedback - how to contact the devs
-    
+
     /lang - сhange your language
+    /help - answers to basic questions
   do: OK. What do you want to do?
   choose_language: Please choose your language.
   language_changed: 👌 OK, your language saved.
-  rate: |
-    Give us 5 stars on Store Bot if you like Controller Bot:
-    
-    telegram.me/storebot?start=LivegramBot
   help: |
     If you have any questions, take a look at the <a href="http://telegra.ph/Livegram-Help-03-29">Livegram Help</a>.
     
     You can control bot by sending these commands:
-    
-    <b>Bots</b>
+
     /addbot - connect a new bot
     /mybots - manage bots
-    
-    <b>Help</b>
-    /example - examples of made bots
+
     /feedback - how to contact the devs
-    
     /lang - сhange your language
-    /rate - rate bot
-    
-    /cancel - cancel the current operation
   example: |
     Here is examples of bots that were made using Livegram Bot:
   
     @ExampleSupportBot — example of a bot made using Livegram Bot.
-  feedback: Message us at @LivegramSupportBot if you have any issues or questions about Livegram Bot.
+  feedback: |
+    Message us at @LivegramSupportBot if you have any issues or questions about Livegram Bot.
+
+    Please note that we do not answer questions regarding bots connected to our platform. We are Livegram Bot technical support.
  
 bots:
   add:
