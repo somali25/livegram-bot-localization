@@ -22,6 +22,7 @@ start:
     /addbot - connect a new bot
     /mybots - manage bots
 
+    /feedback - contact of the dev
     /lang - сhange your language
   example: |
     Here is examples of bots that were made using Livegram Bot:
