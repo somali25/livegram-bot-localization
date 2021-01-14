@@ -2,15 +2,17 @@ name: English
 
 start:
   welcome: |
-    <b>Livegram Bot</b> is a builder of feedback bots for Telegram. Read more <a href="http://telegra.ph/What-is-Livegram-Bot-03-17">here</a>.
+    <a href="https://t.me/BotUpdates/111"><b>Livegram Bot</b></a> is a builder of feedback bots for Telegram. Read more <a href="http://telegra.ph/What-is-Livegram-Bot-03-17">here</a>.
     
     You can control bot by sending these commands:
 
     /addbot - connect a new bot
     /mybots - manage bots
 
-    /lang - сhange your language
+    /ads - buy ads
     /help - answers to basic questions
+
+    Join @LivegramUpdates to get news faster and don't ping support every time.
   do: OK. What do you want to do?
   choose_language: Please choose your language.
   language_changed: 👌 OK, your language saved.
@@ -22,6 +24,7 @@ start:
     /addbot - connect a new bot
     /mybots - manage bots
 
+    /ads - buy ads
     /feedback - contact of the dev
     /lang - сhange your language
   example: |
@@ -32,6 +35,8 @@ start:
     Message us at @LivegramSupportBot if you have any issues or questions about Livegram Bot.
 
     Please note that we do not answer questions regarding bots connected to our platform. We are Livegram Bot technical support.
+  ads: |
+    Use @SecretshipAdsBot if you want to buy ads in this bot. We have more than 5,000,000 active users.
  
 bots:
   add:
