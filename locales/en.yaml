@@ -12,7 +12,7 @@ start:
     /ads - buy ads
     /help - answers to basic questions
 
-    Join @LivegramUpdates to get news faster and don't ping support every time.
+    Join @LivegramUpdates and @secretship to get news faster and don't ping support every time.
   do: OK. What do you want to do?
   choose_language: Please choose your language.
   language_changed: 👌 OK, your language saved.
@@ -27,6 +27,8 @@ start:
     /ads - buy ads
     /feedback - contact of the dev
     /lang - сhange your language
+
+    Join @LivegramUpdates and @secretship to get news faster and don't ping support every time.
   example: |
     Here is examples of bots that were made using Livegram Bot:
   
@@ -58,6 +60,7 @@ bots:
       Success! @${bot.username} has been connected.
       
       Your new bot is ready for working. If you have any questions, take a look at the <a href="http://telegra.ph/Livegram-Help-03-29">Livegram Help</a>.
+    owner_changed: Success! You are now the ownership of the bot.
   list:
     not_found_bots: |
       There is no connected bots yet. Send /addbot to connect a new one.
