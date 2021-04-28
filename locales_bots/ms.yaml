@@ -1,0 +1,27 @@
+language_info:
+ is_enabled: true
+ name: Bahasa Melayu
+
+start:
+ choose_language: 'Sila pilih bahasa anda:'
+ language_changed: Siap, bahasa anda sudah ditukar.
+ copyright: |
+Bot ini dibuat menggunakan @LivegramBot.
+
+ cannot_forward: |
+Kamu tidak boleh majukan mesej orang lain.
+
+ cannot_edit: |
+Jika anda mahu bahawa penerima dapat melihat perubahan, hantar mesej anda sebagai baru.
+
+welcome: |-
+Hello!
+
+Anda boleh berbual dengan kami menggunakan bot ini.
+after_sending: (rentetan tidak dinyatakan)
+
+ban: |
+Anda telah diharamkan ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}
+
+unban: |
+Anda telah tidak dibahagikan.
