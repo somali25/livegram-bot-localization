@@ -21,7 +21,7 @@ welcome: |-
 after_sending: (rentetan tidak dinyatakan)
 
 ban: |
-  You have been banned ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}
+  Anda telah diharamkan ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}
 
 unban: |
-  You have been unbanned.
+  Anda telah tidak dibahagikan.
