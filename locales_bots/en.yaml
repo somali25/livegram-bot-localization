@@ -1,27 +1,27 @@
 language_info:
   is_enabled: true
-  name: English
+  name: soomaali
 
 start:
-  choose_language: 'Please choose your language:'
-  language_changed: OK, your language saved.
+  choose_language: 'Fadlan dooro luuqadaada:'
+  language_changed: Haye, Luuqadaada way saarantay.
   copyright: |
-    This bot was made using @LivegramBot.
+    botkan waa la sameeyey iyada oo la isticmaalayo @LivegramBot.
     
 cannot_forward: |
-  You can't forward someone else's messages.
+  ma awoodid in aad Forward garaysid message qof kale.
   
 cannot_edit: |
-  If you want that the receiver can be able to see the changes, send your message as new.
+  Hadii aad rabtid in aad arinkaan sameysid Hadii aad rabtid in aad arinkaan samaysid message helaha waxa uu arki karaa isbadalka, u soo dir messagekaaga sidii mid cusub.
 
 welcome: |-
   Hello!
   
-  You can contact us using this bot.
-after_sending: (strings are not specified)
+  waxaad awoodaa in aad nala soo hadasho adiga oo isticmaalaya botkan.
+after_sending: (strings lama xaqiijin)
 
 ban: |
-  You have been banned ${until ? 'until ' + until + ' UTC' : 'forever'}.${reason ? '\n\nReason: ' + reason : ''}
+  waa lagaa xanibay halkaan ${ilaa ? 'ilaayo ' + ilaa + ' UTC' : 'waligaa'}.${sababta ? '\n\nReason: ' + sababta : ''}
 
 unban: |
-  You have been unbanned.
+  waa lagaa qaaday xanibaada.
